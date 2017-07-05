@@ -7,10 +7,6 @@ import mpmath as mp
 import ezgal
 import scipy.odr as odr
 import glob, re, string, os, pickle, glob
-
-import good_clusters
-import cluster_class
-import perl_sb
 import integrate_sersics
 
 #######################
