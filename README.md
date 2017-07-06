@@ -13,7 +13,7 @@ I fit the relation ![eqn](https://github.com/wickedalchemist/StellarMass_Sersics
 # Step by Step
 
 1. Decide on the annulus within with you want to know the stellar mass of the brightest cluster galaxy and extended halo of intracluster light (BCG+ICL). These are set in m500_stellarmass_ring.py with the variables term1 and term2 (term2 = outer radius, term1 = inner radius in units of kpc)
-2. On command line run `/astro/data/siesta1/soft/anaconda_2.2.0/bin/python m500_stellarmass_ring.py`  
+2. On command line run `python m500_stellarmass_ring.py`  (Needs Python 2.7)
   * This program first uses the function AG2005_sersics_2dev() defined in integrate_sersics.py to find the total magnitude (brightness) of the BCG+ICL within the specified radiual range for a sample of low-redshift (nearby) galaxy clusters from the paper by Gonzalez et al. (2005). 
   * Then using the stellar population synthesis models provided in the Python module EZGAL (see above for link to package), this total magnitude is converted to a total stellar mass.
   * I have two additional samples of galaxy clusters for which I have previosly measured the stellar mass based on Hubble Space Telescope imaging data that I have reduced and analyzed (i.e. not simply used published profiles to derive these quantities). I have stored the stellar mass and total cluster mass for each galaxy cluster in these additional samples in a Python pickle file.
